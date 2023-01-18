@@ -1,9 +1,10 @@
 import React from 'react'
 import './OurTeam.css'
-import Button from '../common/Button'
+
 
 export default function Teams() {
   return (
+    <div id='ourteam'>
     <section class="section-white">
  
     <div class="container">
@@ -225,5 +226,6 @@ export default function Teams() {
    
 
     </section>
+    </div>
   )
 }

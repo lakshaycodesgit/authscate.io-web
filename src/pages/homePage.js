@@ -3,30 +3,31 @@ import React from "react";
 
 import Footer from "../components/common/footer";
 import Header from "../components/common/Header";
-import CredExperience from "../components/CredExperience";
-import CredSecurity from "../components/CredSecurity";
+import Autentication from "../components/authentication";
+import AboutAuthscate from "../components/About Authscate";
 
-import FeelSpecial from "../components/FeelSpecial";
-import HeroSection from "../components/HeroSection";
+import Aboutus from "../components/About us";
+import Home from "../components/Home";
 import MobileScroll from "../components/MobileScroll";
 import ProductShowcase from "../components/ProductShowcase";
 import WindowPeak from "../components/WindowPeak";
 import OurTeam from"../components/OurTeam";
-
+import Carrier from "../carriers";
 const HomePage = () => {
   return (
     <>
+    
       <Header />
-      <HeroSection />
+      <Home/>
       <ProductShowcase />
-      <FeelSpecial />
+      <Aboutus/>
       
-      <CredExperience />
+      <Autentication />
       <MobileScroll />
       <div className="non-mobile">
         <WindowPeak />
       </div>
-      <CredSecurity />
+      <AboutAuthscate />
       <OurTeam/>
      
       <Footer />

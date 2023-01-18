@@ -1,0 +1,27 @@
+.cred-experience {
+  background-color: var(--bg-blue);
+  background-image: url(imgmain.png);
+}
+
+@media all and (max-width: 1279px) {
+  .cred-experience {
+    background-position:  left;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .cred-experience {
+    background-image: url(mobile.png);
+    min-height: 900px;
+    background-position: right center;
+  }
+
+  .cred-experience-description {
+    margin-top: 100px;
+  }
+
+  .cred-experience-heading {
+    margin-top: 400px;
+    font-size: 50px;
+  }
+}

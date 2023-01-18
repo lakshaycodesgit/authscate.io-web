@@ -6,28 +6,29 @@ const scrollData = [
   {
     heading: "counterfeiting leads to brand reputation damage  ",
     description:
-      "BRAND REPUTATION DAMAGE",
+      "",
     mobile_img:
       require('./img1.png')
   },
   {
-    heading: "begin your winning streak.",
+    heading: "save your DIMINISHED SALES with us.",
     description:
-      "use your CRED coins to participate in games and raffles to win the most exclusive rewards and cashbacks on CRED. good luck.",
+      "",
     mobile_img:
       require('./img2.png'),
   },
   {
-    heading: "for your eclectic taste.",
+    heading: "for your 80 hazar ke joothe.",
     description:
-      "get access to the CRED Store, a member-exclusive selection of products and experiences at special prices that complement your taste. this is the good life they speak of.",
+      ""
+      ,
     mobile_img:
       require('./img3.png'),
   },
   {
-    heading: "more cash in your pockets.",
+    heading: "Resell your luxury goods.",
     description:
-      "switch to CRED RentPay and start paying rent with your credit card. this way you get up to 45 days of credit free period, more reward points and a happy landlord.",
+      "",
     mobile_img:
       require('./mob1.png'),
   },

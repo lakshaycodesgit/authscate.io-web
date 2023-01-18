@@ -1,0 +1,17 @@
+.feel-special {
+  background-color: var(--bg-red);
+  background-image: url(back2.png);
+  overflow-x: hidden;
+}
+
+@media all and (max-width: 1279px) {
+ 
+}
+
+@media all and (max-width: 767px) {
+  .feel-special {
+    background-image: url(mobile1.png);
+    min-height: 1150px;
+    background-position: right center;
+  }
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./header.css";
+import {Link} from "RE"
+
 
 const Header = () => {
   const [showMobMenu, setShowMobMenu] = useState(false);
@@ -15,8 +17,12 @@ const Header = () => {
         className={`mobile-menu only-mobile ${showMobMenu ? "overlay" : ""}`}
       >
         <div className="mobile-navbar">
-          <div className="mobile-nav-item">credit score check</div>
-          <div className="mobile-nav-item">credit card bill payment</div>
+            <div className="mobile-nav-item">Home</div>
+          <div className="mobile-nav-item">About us</div>
+          <div className="mobile-nav-item">Our Team</div>
+          <div className="mobile-nav-item">About AuthScate</div>
+          <div className="mobile-nav-item">FAQ</div>
+          <div className="mobile-nav-item">Careers</div>
         </div>
       </div>
       <div className="max-width flex header">
@@ -38,14 +44,14 @@ const Header = () => {
           </button>
         </div>
         <div className="non-mobile flex">
-          <div className="header-nav-item">Home</div>
-          <div className="header-nav-item">About us</div>
-          <div className="header-nav-item">Our Team</div>
-          <div className="header-nav-item">About AuthScate</div>
-          <div className="header-nav-item">FAQ</div>
-          <button class={`hamburger hamburger--spin ${
-              showMobMenu ? "is-active" : ""
-            }`}>Careers </button>
+          <div className="header-nav-item"><a href="#home" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
+          <div className="header-nav-item"><a href="#about" style={{color:"inherit",textDecoration:"none"}}>About Us</a></div>
+          <div className="header-nav-item"><a href="#ourteam" style={{color:"inherit",textDecoration:"none"}}>Our Team</a></div>
+          <div className="header-nav-item"><a href="#aboutauthscate" style={{color:"inherit",textDecoration:"none"}}>About Authscate</a></div>
+          <div className="header-nav-item"><a href="#faq" style={{color:"inherit",textDecoration:"none"}}>FAQ</a></div>
+          <div className="header-nav-item"><a href="/carriers"><button type="button" class="btn btn-light" href="/carriers">Careers</button></a></div>
+          
+            
           
 
 
