@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import {Link} from "RE"
+import {Navigate} from "react-router-dom"
 
 
 const Header = () => {
@@ -16,14 +16,14 @@ const Header = () => {
       <div
         className={`mobile-menu only-mobile ${showMobMenu ? "overlay" : ""}`}
       >
-        <div className="mobile-navbar">
-            <div className="mobile-nav-item">Home</div>
-          <div className="mobile-nav-item">About us</div>
+       {/* <div className="mobile-navbar">
+            <div className="mobile-nav-item"><a href="#home" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
+          <div className="mobile-nav-item"><a href="#about" style={{color:"inherit",textDecoration:"none"}}>Aboout Us</a></div>
           <div className="mobile-nav-item">Our Team</div>
           <div className="mobile-nav-item">About AuthScate</div>
           <div className="mobile-nav-item">FAQ</div>
           <div className="mobile-nav-item">Careers</div>
-        </div>
+  </div>*/}
       </div>
       <div className="max-width flex header">
         <img
@@ -49,7 +49,7 @@ const Header = () => {
           <div className="header-nav-item"><a href="#ourteam" style={{color:"inherit",textDecoration:"none"}}>Our Team</a></div>
           <div className="header-nav-item"><a href="#aboutauthscate" style={{color:"inherit",textDecoration:"none"}}>About Authscate</a></div>
           <div className="header-nav-item"><a href="#faq" style={{color:"inherit",textDecoration:"none"}}>FAQ</a></div>
-          <div className="header-nav-item"><a href="/carriers"><button type="button" class="btn btn-light" href="/carriers">Careers</button></a></div>
+          <div className="header-nav-item"><a href=""><button type="button" class="btn btn-light" >Careers</button></a></div>
           
             
           

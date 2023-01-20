@@ -8,8 +8,7 @@ const HeroSection = () => {
     <div className="hero-section-wrapper" 
       img src={require('./logo4.png')}
     >
-      
-      <div className="flex absolute-center hero-claim-label">
+           {/* <div className="flex absolute-center hero-claim-label">
         <div>We are hiring !</div>
         <div className="claim-anchor">
           Apply now
@@ -18,7 +17,11 @@ const HeroSection = () => {
             className="claim-arrow"
           />
         </div>
-      </div>
+      </div>. */}
+          
+
+      
+      
       
       <div className="flex flex-col absolute-center hero-section max-width">
         

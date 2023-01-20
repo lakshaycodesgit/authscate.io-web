@@ -16,10 +16,10 @@ const CredExperience = () => {
             </div>
           </div>
           <div className="photo-section-bottom">
-            <div className="photo-section-description cred-experience-description">
+            {/*<div className="photo-section-description cred-experience-description">
              
 To put this into perspective, almost 20% of the products listed on Social Media are counterfeits.
-            </div>
+  </div>*/}
             <div className="photo-section-button">
           
             </div>

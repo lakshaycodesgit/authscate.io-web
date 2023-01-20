@@ -12,7 +12,11 @@ import MobileScroll from "../components/MobileScroll";
 import ProductShowcase from "../components/ProductShowcase";
 import WindowPeak from "../components/WindowPeak";
 import OurTeam from"../components/OurTeam";
-import Carrier from "../carriers";
+
+import FAQ from "../components/FAQ";
+
+
+
 const HomePage = () => {
   return (
     <>
@@ -29,6 +33,8 @@ const HomePage = () => {
       </div>
       <AboutAuthscate />
       <OurTeam/>
+      <FAQ/>
+     
      
       <Footer />
     </>
