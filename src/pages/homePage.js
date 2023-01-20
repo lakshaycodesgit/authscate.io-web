@@ -33,7 +33,7 @@ const HomePage = () => {
       </div>
       <AboutAuthscate />
       <OurTeam/>
-      <FAQ/>
+   
      
      
       <Footer />
