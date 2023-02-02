@@ -4,7 +4,7 @@ import Footer from '../common/footer'
 import "./form1.css"
 import axios from "axios"
 
-function AddForm() {
+function Form() {
   const [apply, setApply] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -71,12 +71,13 @@ function AddForm() {
     <label for="inputPassword4" class="form-label">Email Id</label>
     <input type="email" name='email' value={email} onChange={(e) => setEmail(e.target.value)} class="form-control" id="inputPassword4"/>
   </div>
-  <div class="col-12">
-    <label for="inputAddress"  class="form-label">Branch Name</label>
-    <input name="branch" value={branch} onChange={(e) => setBranch(e.target.value)} id="inputAddress" placeholder=""/>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Branch Name</label>
+    <input type="email" name='email' value={branch} onChange={(e) => setBranch(e.target.value)} class="form-control" id="inputPassword4"/>
   </div>
+  
   <div class="form-group col-md-12">
-    <label for="formGroupExampleInput2">Explain your past expirence (within 250 words)</label>
+    <label for="formGroupExampleInput2">Explain your past experience (within 250 words)</label>
     <textarea class="form-control" name="explain" value={explain} onChange={(e) => setExplain(e.target.value)} type="text" id="exampleFormControlTextarea1" rows="3"></textarea>
     {/*<input name="explain" value={user.explain} onChange={handleInputs} type="text" class="form-control input-lg"  rows="3" id="formGroupExampleInput2" placeholder=""/>*/}
   </div>
@@ -129,7 +130,7 @@ function AddForm() {
       </label>
   </div>*/}
   <div class="col-12">
-    <button type="submit" onClick={addForm} class="btn btn-light btn-md round">Submit</button>
+    <button  onClick={addForm} class="btn btn-light btn-md round">Submit</button>
   </div>
 </form>
   </div>
@@ -138,4 +139,4 @@ function AddForm() {
   )
 }
 
-export default AddForm
+export default Form

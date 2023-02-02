@@ -29,7 +29,7 @@ app.post("/register", (req, res) => {
   
     console.log("Form Detail >>>>", formDetail);
   
-    Products.create(formDetail, (err, data) => {
+    formdata.create(formDetail, (err, data) => {
       if (err) {
         res.status(500).send(err.message);
         console.log(err);
