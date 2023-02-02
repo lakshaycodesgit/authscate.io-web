@@ -29,9 +29,10 @@ const HeroSection = () => {
         NFTs to prevent counterfeiting
                 </div>
         <div className="hero-subheading">
-        Selling a product, purporting to be something is not
+        Selling a product, pretending to be something is not
         </div>
-        <Button buttonText="Click to know more" />
+        <a href="#about" style={{color:"inherit",textDecoration:"none"}}>
+          <Button buttonText="Click to know more" /></a>
       </div>
     </div>
   );

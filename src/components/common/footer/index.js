@@ -66,7 +66,7 @@ const Footer = () => {
              &nbsp; Mail us at
             </div>
                 <div class="cta-text">
-                  <h4>info@authscate.com</h4>
+                  <h4>info@authscate.io</h4>
                   <span></span>
                 </div>
               </div>
@@ -90,11 +90,11 @@ const Footer = () => {
                   <h3>Useful Links</h3>
                 </div>
                 <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Our Team</a></li>
-                  <li><a href="#">About authscate</a></li>
-                  <li><a href="#">F.A.Q</a></li>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About us</a></li>
+                  <li><a href="#ourteam">Our Team</a></li>
+                  <li><a href="#aboutauthscate">About Authscate</a></li>
+                  <li><a href="#faq">F.A.Q</a></li>
                   <li><a href="#">Carriers</a></li>
              
                 </ul>
@@ -106,7 +106,7 @@ const Footer = () => {
                   <h3>Subscribe</h3>
                 </div>
                 <div class="footer-text mb-25">
-                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                  <p style={{color:"white"}}>Don’t miss our new feeds, subscribe to our newsletter</p>
                 </div>
                 <div class="subscribe-form">
                   <form action="#">

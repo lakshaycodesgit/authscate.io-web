@@ -23,7 +23,7 @@ const FeelSpecial = () => {
 
             
             <div className="photo-section-button">
-              <Button buttonText="Learn More" />
+              <a href="#mobileshowcase" style={{textdecoration: "none"}}><Button buttonText="Learn More" /></a>
             </div>
           </div>
         </div>

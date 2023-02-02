@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
-import {Navigate} from "react-router-dom"
+import {Link, Navigate} from "react-router-dom"
 
 
 const Header = () => {
@@ -16,20 +16,20 @@ const Header = () => {
       <div
         className={`mobile-menu only-mobile ${showMobMenu ? "overlay" : ""}`}
       >
-       {/* <div className="mobile-navbar">
-            <div className="mobile-nav-item"><a href="#home" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
-          <div className="mobile-nav-item"><a href="#about" style={{color:"inherit",textDecoration:"none"}}>Aboout Us</a></div>
-          <div className="mobile-nav-item">Our Team</div>
-          <div className="mobile-nav-item">About AuthScate</div>
-          <div className="mobile-nav-item">FAQ</div>
-          <div className="mobile-nav-item">Careers</div>
-  </div>*/}
+        <div className="mobile-navbar">
+            <div className="mobile-nav-item"><a href="/" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
+          <div className="mobile-nav-item"><a href="/#about" style={{color:"inherit",textDecoration:"none"}}>About Us</a></div>
+          <div className="mobile-nav-item"><a href="/#ourteam" style={{color:"inherit",textDecoration:"none"}}>Our Team</a></div>
+          <div className="mobile-nav-item"><a href="/#aboutauthscate" style={{color:"inherit",textDecoration:"none"}}>About Authscate</a></div>
+          <div className="mobile-nav-item"><a href="/#faq" style={{color:"inherit",textDecoration:"none"}}>FAQ</a></div>
+          <div className="mobile-nav-item"><Link to={"/register"} style={{color:"inherit",textDecoration:"none"}}>Careers</Link></div>
+  </div>
       </div>
       <div className="max-width flex header">
-        <img
+        <a href="/"><img
           src={require('./logo3.png')}
           className="header-logo"
-        />
+        /></a>
         <div className="only-mobile mobile-menu-button-wrapper">
           <button
             class={`hamburger hamburger--spin ${
@@ -44,12 +44,12 @@ const Header = () => {
           </button>
         </div>
         <div className="non-mobile flex">
-          <div className="header-nav-item"><a href="#home" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
-          <div className="header-nav-item"><a href="#about" style={{color:"inherit",textDecoration:"none"}}>About Us</a></div>
-          <div className="header-nav-item"><a href="#ourteam" style={{color:"inherit",textDecoration:"none"}}>Our Team</a></div>
-          <div className="header-nav-item"><a href="#aboutauthscate" style={{color:"inherit",textDecoration:"none"}}>About Authscate</a></div>
-          <div className="header-nav-item"><a href="#faq" style={{color:"inherit",textDecoration:"none"}}>FAQ</a></div>
-          <div className="header-nav-item"><a href=""><button type="button" class="btn btn-light" >Careers</button></a></div>
+          <div className="header-nav-item"><a href="/" style={{color:"inherit",textDecoration:"none"}}>Home</a></div>
+          <div className="header-nav-item"><a href="/#about" style={{color:"inherit",textDecoration:"none"}}>About Us</a></div>
+          <div className="header-nav-item"><a href="/#ourteam" style={{color:"inherit",textDecoration:"none"}}>Our Team</a></div>
+          <div className="header-nav-item"><a href="/#aboutauthscate" style={{color:"inherit",textDecoration:"none"}}>About Authscate</a></div>
+          <div className="header-nav-item"><a href="/#faq" style={{color:"inherit",textDecoration:"none"}}>FAQ</a></div>
+          <div className="header-nav-item"><Link to={"/register"}><button type="button" class="btn btn-light" >Careers</button></Link></div>
           
             
           

@@ -10,7 +10,7 @@
 
 @media all and (max-width: 767px) {
   .feel-special {
-    background-image: url(mobile1.png);
+    background-image: url("mobile1.png");
     min-height: 1150px;
     background-position: right center;
   }

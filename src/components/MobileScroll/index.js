@@ -3,6 +3,7 @@ import "./mobileScroll.css";
 import ScreenText from "./ScreenText";
 
 const scrollData = [
+  
   {
     heading: "counterfeiting leads to brand reputation damage  ",
     description:
@@ -37,6 +38,7 @@ const scrollData = [
 const MobileScroll = () => {
   const [currentImg, setCurrentImg] = useState(0);
   return (
+    <div id="mobileshowcase">
     <div className="mobile-scroll flex max-width">
       <div className="scroll-full-screen-wrapper">
         {scrollData.map((screen, i) => (
@@ -56,6 +58,7 @@ const MobileScroll = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
